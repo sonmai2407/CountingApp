@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="#6D48F3"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="HelloSharedPrefs"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/countTextView"
+        android:layout_width="394dp"
+        android:layout_height="384dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="30dp"
+        android:background="#BEC3C6"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="0"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="140sp" />
+
+    <LinearLayout
+        android:layout_width="394dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/blackButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:text="BLACK"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/redButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#ff0000"
+            android:text="RED"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/blueButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#3F51B5"
+            android:text="BLUE"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/greenButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#4CAF50"
+            android:text="GREEN"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/countButton"
+        android:layout_width="394dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#BEC3C6"
+        android:text="Count"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="394dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#BEC3C6"
+        android:text="Reset"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp" />
+
+</LinearLayout>
